@@ -11,9 +11,9 @@ This project explores online retail transaction data to understand sales perform
 - What business opportunities can be identified from the data?
 
 ## Tools
-- SQL — querying and analysis
-- Python — data cleaning and exploratory analysis
-- Power BI — interactive dashboard
+- SQL - querying and analysis
+- Python - data cleaning and exploratory analysis
+- Power BI - interactive dashboard
 
 ## Dataset
 UCI Machine Learning Repository: Online Retail
