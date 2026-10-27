@@ -1,0 +1,78 @@
+ONLINE RETAIL SALES ANALYSIS
+============================
+
+DATASET OVERVIEW
+Original rows: 541909
+Original columns: 8
+Exact duplicate rows: 5268
+Rows after removing duplicates: 536641
+Missing CustomerIDs after deduplication: 135037
+Missing descriptions after deduplication: 1454
+Raw revenue before filtering: 9747747.93
+
+FILTERED SALES DATASET
+Rows retained: 524878
+Positive-sales revenue total: 10642110.80
+Unique invoices: 19960
+Unique stock codes: 3922
+
+TOP 10 PHYSICAL PRODUCTS BY REVENUE
+StockCode  Description                       
+22423      REGENCY CAKESTAND 3 TIER              174156.54
+23843      PAPER CRAFT , LITTLE BIRDIE           168469.60
+85123A     WHITE HANGING HEART T-LIGHT HOLDER    104284.24
+47566      PARTY BUNTING                          99445.23
+85099B     JUMBO BAG RED RETROSPOT                94159.81
+23166      MEDIUM CERAMIC TOP STORAGE JAR         81700.92
+23084      RABBIT NIGHT LIGHT                     66870.03
+22086      PAPER CHAIN KIT 50'S CHRISTMAS         64875.59
+84879      ASSORTED COLOUR BIRD ORNAMENT          58927.62
+79321      CHILLI LIGHTS                          54096.36
+
+MONTHLY REVENUE (FILTERED POSITIVE SALES)
+Month
+2010-12     821452.730
+2011-01     689811.610
+2011-02     522545.560
+2011-03     716215.260
+2011-04     536968.491
+2011-05     769296.610
+2011-06     760547.010
+2011-07     718076.121
+2011-08     757841.380
+2011-09    1056435.192
+2011-10    1151263.730
+2011-11    1503866.780
+2011-12     637790.330
+Freq: M
+
+TOP 10 COUNTRIES BY REVENUE
+Country
+United Kingdom    9001744.094
+Netherlands        285446.340
+EIRE               283140.520
+Germany            228678.400
+France             209625.370
+Australia          138453.810
+Spain               61558.560
+Switzerland         57067.600
+Belgium             41196.340
+Sweden              38367.830
+
+TOP 10 CUSTOMERS BY REVENUE
+CustomerID
+14646.0    280206.02
+18102.0    259657.30
+17450.0    194390.79
+16446.0    168472.50
+14911.0    143711.17
+12415.0    124914.53
+14156.0    117210.08
+17511.0     91062.38
+16029.0     80850.84
+12346.0     77183.60
+
+NOTES AND LIMITATIONS
+Revenue in the filtered sales dataset represents positive-value sales after the stated filters; it is not net revenue after returns.
+December 2011 may be a partial month because the source dataset ends during December.
+The physical-product ranking excludes stock codes DOT, POST, and M based on the project's current classification assumption.
