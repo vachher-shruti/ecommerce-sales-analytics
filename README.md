@@ -1,9 +1,11 @@
 # E-commerce Sales Analytics
 
 ## Overview
-This project explores online retail transaction data to understand sales performance, product trends, and customer purchasing behaviour.
+
+This project analyses online retail transaction data to understand sales performance, product trends, and customer purchasing behaviour. The goal is to identify useful business insights through data cleaning, exploratory analysis, SQL, and data visualisation.
 
 ## Business Questions
+
 - Which products generate the most revenue?
 - How do sales change over time?
 - Which countries contribute the most revenue?
@@ -11,20 +13,47 @@ This project explores online retail transaction data to understand sales perform
 - What business opportunities can be identified from the data?
 
 ## Tools
-- SQL - querying and analysis
-- Python - data cleaning and exploratory analysis
-- Power BI - interactive dashboard
+
+- **Python:** Data cleaning, exploratory data analysis, and visualisation
+- **SQL:** Querying and analysing sales data
+- **Power BI:** Interactive dashboard development
 
 ## Dataset
-UCI Machine Learning Repository: Online Retail
-https://archive.ics.uci.edu/dataset/352/online+retail
 
-## Project Status
-Phase 1: Repository setup and business questions.
-Analysis and dashboard development are in progress.
+Source: [UCI Machine Learning Repository — Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail)
 
-## Planned Deliverables
-- Data cleaning and validation
-- SQL analysis
-- Sales dashboard
-- Business insights and recommendations
+The dataset contains online retail transactions, including invoice numbers, product details, quantities, unit prices, invoice dates, customer IDs, and countries.
+
+## Python Analysis Completed
+
+- Inspected the dataset and checked for missing values and duplicate records.
+- Removed exact duplicate rows.
+- Investigated cancellations, negative quantities, unusual prices, and missing values.
+- Created a filtered dataset for positive-value sales analysis.
+- Analysed revenue by product, month, country, and customer.
+- Generated charts for monthly revenue and top physical products.
+- Exported the filtered dataset to CSV.
+
+## Key Findings
+
+- The filtered sales dataset contains 524,878 records.
+- Total positive-sales revenue in the filtered dataset is approximately £10.64 million.
+- The Regency Cake Stand 3 Tier generated approximately £174,156.54 in recorded sales revenue, ranking first among the physical products included in the analysis.
+- November 2011 had the highest monthly revenue in the filtered dataset, at approximately £1.50 million.
+- The United Kingdom contributed approximately £9.00 million in filtered sales revenue.
+
+*Note: These revenue figures represent positive-value sales after filtering, not net revenue after returns. December 2011 may be a partial month. The physical-product ranking excludes stock codes DOT, POST, and M based on the project's current classification assumption.*
+
+## Project Files
+
+- `sales_analysis_cleaned.py` - Python analysis script
+- `analysis_summary.txt` - Summary of the analysis and findings
+- `cleaned_sales_data.csv` - Filtered sales dataset
+- `monthly_revenue.png` - Monthly revenue trend chart
+- `top_10_products.png` - Top 10 physical products by revenue chart
+
+## Next Steps
+
+- Perform SQL-based sales analysis.
+- Build an interactive Power BI dashboard.
+- Develop additional business insights and recommendations.
