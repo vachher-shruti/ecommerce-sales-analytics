@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyses online retail transaction data to understand sales performance, product trends, and customer purchasing behaviour. The goal is to identify useful business insights through data cleaning, exploratory analysis, SQL, and data visualisation.
+This project analyses online retail transaction data to understand sales performance, product trends, and customer purchasing behaviour. The goal is to identify useful business insights through data cleaning, exploratory analysis, and data visualisation.
 
 ## Business Questions
 
@@ -36,23 +36,25 @@ The dataset contains online retail transactions, including invoice numbers, prod
 
 ## Key Findings
 
-- The filtered sales dataset contains 524,878 records.
-- Total positive-sales revenue in the filtered dataset is approximately £10.64 million.
-- The Regency Cake Stand 3 Tier generated approximately £174,156.54 in recorded sales revenue, ranking first among the physical products included in the analysis.
-- November 2011 had the highest monthly revenue in the filtered dataset, at approximately £1.50 million.
-- The United Kingdom contributed approximately £9.00 million in filtered sales revenue.
+- The filtered sales dataset contains **524,878 records**.
+- Total positive-sales revenue in the filtered dataset is approximately **£10.64 million**.
+- The Regency Cake Stand 3 Tier generated approximately **£174,156.54** in recorded sales revenue, ranking first among the physical products included in the analysis.
+- November 2011 had the highest monthly revenue, at approximately **£1.50 million**.
+- The United Kingdom contributed approximately **£9.00 million** in filtered sales revenue.
 
-*Note: These revenue figures represent positive-value sales after filtering, not net revenue after returns. December 2011 may be a partial month. The physical-product ranking excludes stock codes DOT, POST, and M based on the project's current classification assumption.*
+### Notes and Limitations
 
-## Project Files
+- Revenue represents positive-value sales after filtering, not net revenue after returns.
+- December 2011 may be a partial month because the source dataset ends during December.
+- The physical-product ranking excludes stock codes `DOT`, `POST`, and `M` based on the project's current classification assumption.
 
-- `sales_analysis_cleaned.py` - Python analysis script
-- `analysis_summary.txt` - Summary of the analysis and findings
-- `monthly_revenue.png` - Monthly revenue trend chart
-- `top_10_products.png` - Top 10 physical products by revenue chart
+## Project Structure
 
-## Next Steps
-
-- Perform SQL-based sales analysis.
-- Build an interactive Power BI dashboard.
-- Develop additional business insights and recommendations.
+```text
+ecommerce-sales-analytics/
+├── README.md
+└── python/
+    ├── sales_analysis_cleaned.py
+    ├── analysis_summary.txt
+    ├── monthly_revenue.png
+    └── top_10_products.png
