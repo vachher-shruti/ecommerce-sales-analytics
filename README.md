@@ -48,7 +48,6 @@ The dataset contains online retail transactions, including invoice numbers, prod
 
 - `sales_analysis_cleaned.py` - Python analysis script
 - `analysis_summary.txt` - Summary of the analysis and findings
-- `cleaned_sales_data.csv` - Filtered sales dataset
 - `monthly_revenue.png` - Monthly revenue trend chart
 - `top_10_products.png` - Top 10 physical products by revenue chart
 
