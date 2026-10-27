@@ -58,3 +58,12 @@ ecommerce-sales-analytics/
     ├── analysis_summary.txt
     ├── monthly_revenue.png
     └── top_10_products.png
+```
+
+The cleaned dataset (`cleaned_sales_data.csv`) is generated locally by the Python script and is not included in the repository because of its file size.
+
+## Next Steps
+
+- Perform SQL-based sales analysis.
+- Build an interactive Power BI dashboard.
+- Develop additional business insights and recommendations.
